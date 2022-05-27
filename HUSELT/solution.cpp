@@ -1,7 +1,5 @@
 #include <iostream>
-#include <vector>
 using namespace std;
-
 
 int tree[2][400001];
 

@@ -11,7 +11,7 @@ void build(int arr[], int l, int r, int index) {
     }
     int mid = (l + r) >> 1;
     build(arr, l, mid, index<<1);
-    build(arr, mid+1, r, index<<1|1);
+    build(arr, mid + 1, r, index<<1|1);
     
     int right = 0, left = 0, lSize = tree[index<<1].size(), rSize = tree[index<<1|1].size();
     while(left < lSize && right < rSize) {
